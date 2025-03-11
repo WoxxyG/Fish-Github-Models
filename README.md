@@ -29,6 +29,11 @@ Basic usage:
 mrun [model_shortcut] "your prompt here"
 ```
 
+Without any arguments (launches interactive GitHub Models interface):
+```
+mrun
+```
+
 Without specifying a model (defaults to gpt-4o):
 ```
 mrun "What is the capital of France?"

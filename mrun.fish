@@ -1,6 +1,10 @@
 function mrun
+    # If no arguments are provided, simply run "gh models run"
+    if test (count $argv) -eq 0
+        gh models run
+        return
     # If only one argument is provided, treat it as the prompt and use gpt-4o
-    if test (count $argv) -eq 1
+    else if test (count $argv) -eq 1
         set model_full "gpt-4o"
         set prompt $argv[1]
     else if test (count $argv) -ge 2
